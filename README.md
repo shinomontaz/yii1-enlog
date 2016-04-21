@@ -12,10 +12,11 @@ main.php:
 ...
 'components' => [
 	'enlog' => [
-		'class' => 'EnlogService',
-		'url' =>	'https://api.enlog.net',
-		'name' =>	'YOUR ENLOG USER NAME',
-		'pass' =>	'YOUR ENLOG USER PASS',
+		'class'		=> 'EnlogService',
+		'url'		=> 'https://api.enlog.net',
+		'name'		=> 'YOUR ENLOG USER NAME',
+		'pass'		=> 'YOUR ENLOG USER PASS',
+		'isTest'	=> false
 	],
 	...
 ```

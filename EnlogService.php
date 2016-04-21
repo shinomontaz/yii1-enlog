@@ -57,7 +57,7 @@ class EnlogService extends CComponent {
             throw new Exception( VarDumper::dumpAsString($jsonResponse) );
         }
         else if( $jsonResponse->result && !isset( $jsonResponse->result->error ) ) {
-            return $jsonResponse->result->task;
+            return $jsonResponse->result;
         }
         else {
             throw new Exception( $jsonResponse->result->error );

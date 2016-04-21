@@ -11,7 +11,19 @@ class EnlogService extends CComponent {
     public $url;
     public $name;
     public $pass;
+    public $isTest = true;
 
+    /**
+     * @param string $name
+     * @param string $pass
+     * @return EnlogService
+     */
+    public function auth( $name, $pass ) {
+      $this->name = $name;
+      $this->pass = $pass;
+      return $this;
+    }
+	
     /**
      * {@inheritdoc }
      */
